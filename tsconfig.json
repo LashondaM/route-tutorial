@@ -2,7 +2,11 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "src", // change ./ to src
+    "paths": {
+      "@uapps/*": ["app/userapps/*"],
+      "@home/*": ["app/userapps/home/*"]
+    }, // add paths to this list
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
